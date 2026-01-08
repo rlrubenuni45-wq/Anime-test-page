@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+  <style>
+        *{
+margin: 0;
+padding: 0;
+}
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.6)50%, rgba(0,0,0,0.6)50%), url(picture/sleeping.gif);
+    background-position: center;
+    background-size : cover;
+    height: 100vh;
+}
+
+.navbar{
+    width: 1200px;
+    height:75px;
+    margin: auto;
+}
+
+.icon{
+    width:200px ;
+    float:left;
+    height:70px;
+}
+
+.logo{
+    color: #ff7200;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 65px;
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #ff7200;
+    text-decoration: underline;
+}
+
+.search{
+    width: 330px;
+    float:left;
+    margin-left: 270px;
+}
+
+.srch{
+    font-family: 'Times New Roman';
+    width: 190px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #ff7200;
+    margin-top: 13px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding:10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.btn:focus{
+    outline:none
+}
+
+.srch:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: black;
+    text-decoration: none;
+}
+
+.aboutcont{
+    width: 700px;
+    height: auto;
+    margin-left: 265px;
+    color: #dadada;
+    position: absolute;
+    top:105px;
+    font-family: Arial;
+    text-align: center;
+}
+
+.aboutcont h1{
+    font-family: arial;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+.aboutcont p{
+    margin-top: 30px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.aboutcont p1{
+    margin-top: 30px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.aboutcont h2{
+    text-decoration: none;
+    margin-top: 50px;
+}
+.aboutcont li{
+    font-size: 20px;
+    margin-top: 5px;
+    font-family: 'Times New Roman';
+}
+
+.aboutcont span{
+     color: #ff7200;
+}
+   
+     </style>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">AnimeWorld</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="anime2.html">ANIME</a></li>
+                    <li><a href="genres.html">GENRES</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input class="srch" type="search" name="search" placeholder="Type To Text">
+                <a href="#"><button class="btn">Search</button></a>
+            </div>
+           <div class="aboutcont">
+                <h1>About <span>AnimeWorld</span></h1>
+
+                <P1>
+                    AnimeWorld is a simple anime-theme website created for anime fans who want to explore popular anime series, characters, and genres in one place.
+                </P1>
+
+                <p>
+                    This website is designed for beginners and focuses on clean design, easy navigation, and a fun anime atmosphere. Whether you enjoy action, romance, fantasy, or comedy anime, AnimeWorld has something for you.
+                </p>
+
+                <p>
+                    AnimeWorld was created as a learning project to practice web design using HTML and CSS. More features and pages will be added in the furture.
+                </p>
+
+                <h2>Why <span>AnimeWorld?</span></h2>
+                <ul class="list">
+                    <li>Simple and beginner-friendly</li>
+                    <li>Information about popular anime</li>
+                    <li>clean and easy navigation</li>
+                    <li>built with HTML & CSS</li>
+                </ul>
+           </div>
+        </div>
+    </div>
+</body>
+</html>

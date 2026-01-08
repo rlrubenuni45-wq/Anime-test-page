@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Display</title>
+         <style>
+        *{
+margin: 0;
+padding: 0;
+}
+
+body{
+   margin: 0;
+    padding: 0; 
+    background: linear-gradient(to top, rgba(0,0,0,0.4)25%, rgba(0,0,0,0.4)25%), url(picture/goku.gif);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.navbar{
+    width: 1200px;
+    height:75px;
+    margin: auto;
+}
+
+.icon{
+    width:200px ;
+    float:left;
+    height:70px;
+}
+
+.logo{
+    color: #ff7200;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 65px;
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #ff7200;
+    text-decoration: underline;
+}
+
+.search{
+    width: 330px;
+    float:left;
+    margin-left: 270px;
+}
+
+.srch{
+    font-family: 'Times New Roman';
+    width: 190px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #ff7200;
+    margin-top: 13px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding:10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.btn:focus{
+    outline:none
+}
+
+.srch:focus{
+    outline: none;
+}
+
+.message h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ff7200;
+    font-size: 22px;
+    border-radius: 10px;
+    margin: 2px;
+    padding:8px;
+}
+
+.animelist{
+    max-width: 1000px;
+    width: 90%;
+    margin: auto;
+    padding-top: 0px;
+    color: #fff;
+}
+
+.animelist h1{ 
+    text-align: center; 
+    font-size: 45px; 
+    margin-top: 10px; 
+}
+
+.animelist span{
+    color: #ff7200;
+}
+
+.cards{
+    display: grid ;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+
+
+.card{
+    background: rgba(0,0,0,0.6);
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.card img{
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.card h3{
+    margin-top: 15px;
+}
+
+.card p{
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 10px;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(255,114,0,0.6), 0 0 40px rgba(255,114,0,0.6);
+}
+
+@media (max-width: 780px){
+    .menu ul{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .search{
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .srch{
+        width: 60px;
+    }
+
+    .animelist h1{
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px){
+    .logo{
+        font-size: 26px;
+    }
+
+    .card img{
+        height: 250px;
+    }
+}
+     </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">AnimeWorld</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="anime2.html">ANIME</a></li>
+                    <li><a href="genres.html">GENRES</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                
+                </ul>
+            </div>
+                
+                <div class="search">
+                    <input class="srch" type="search" name="search" placeholder="Type To Text">
+                    <a href="#"><button class="btn">Search</button></a>
+                
+                </div>
+        </div>
+
+            <div class="animelist">
+                <h1>Popular <span>Anime</span></h1>
+                <div class="cards">
+                    <div class="card">
+                        <img src="card/bleach.jpg" alt="bleach">
+                        <h3><span>Bleach</span></h3>
+                        <p>
+                            Genres: Supernatural, Action, Adventure <br>
+                            Episodes: 366 <br>
+                        </p>
+                        </div>
+                    <div class="card">
+                        <img src="card/demonslayer.jpg" alt="Demon Slayer">
+                        <h3><span>Demon Slayer</span></h3>
+                        <p>
+                            Genres: Supernatural, Action, Adventure <br>
+                            Episodes: 65 <br>
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="card/jjk1.gif" alt="jjk">
+                        <h3><span>Jujutsu Kaisen</span></h3>
+                        <p>
+                            Genres: Supernatural, Action, Adventure <br>
+                            Episodes: 47 <br>
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="card/onepiece.jpg" alt="onepiece">
+                        <h3><span>One Piece</span></h3>
+                        <p>
+                            Genres: Action, Adventure, Crime <br>
+                            Episodes: 1000+ <br>
+                        </p>
+                    </div>
+                     <div class="card">
+                        <img src="card/naruto.jpg" alt="naruto">
+                        <h3><span>Naruto</span></h3>
+                        <p>
+                            Genres: Action, Adventure <br>
+                            Episodes: 500+ <br>
+                        </p>
+                    </div>
+                     <div class="card">
+                        <img src="card/dragonball1.jpg" alt="dragonball">
+                        <h3><span>Dragon Ball</span></h3>
+                        <p>
+                            Genres: Action, Adventure, Super Power<br>
+                            Episodes: 700+ <br>
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="card/mha.jpg" alt="mha">
+                        <h3><span>My Hero Academia</span></h3>
+                        <p>
+                            Genres: Action, Adventure, Super Power<br>
+                            Episodes: 100+ <br>
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="card/attackontitan.jpg" alt="aot">
+                        <h3><span>Attack on Titan</span></h3>
+                        <p>
+                            Genres: Action, Adventure, Super Power<br>
+                            Episodes: 100+ <br>
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="card/wakfu1.png" alt="wakfu">
+                        <h3><span>Wakfu</span></h3>
+                        <p>
+                            Genres: Action, Adventure, Super Power<br>
+                            Episodes: 80+ <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+</body>
+</html>
